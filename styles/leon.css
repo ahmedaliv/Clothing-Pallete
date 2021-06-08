@@ -82,7 +82,7 @@ section {
     align-items: center ;
     text-align: center;
     position: relative;
-    transition-duration: 500ms;
+    transition-duration: 1000ms;
 }
  .text-content h4 {
     color:var(--secondary-color);
