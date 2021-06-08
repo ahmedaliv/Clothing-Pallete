@@ -598,10 +598,6 @@ select {
     .containem {
         width: 100%;
     }
-    /* .mesform {
-        display: grid;
-        grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
-    } */
 }    
 
 .sreg {
