@@ -67,7 +67,7 @@ header {
     font-size: 17px;
 }
 .navbar-menu li a:hover {
-    
+    /* background-color: var(--secondary-color); */
     color: white;
     padding:10px;
     border-radius: 5px;
@@ -611,7 +611,7 @@ select {
         flex-direction: column;
     }
 }    
- 
+
 
 .sreg {
     text-transform: uppercase;
