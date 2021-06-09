@@ -27,6 +27,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap:wrap;
 }
 .container .navbar-brand {
     text-transform: uppercase;
