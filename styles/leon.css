@@ -27,7 +27,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap:wrap;
 }
 .container .navbar-brand {
     text-transform: uppercase;
@@ -137,6 +136,13 @@ section {
     }
     header .container {
         justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    .container .navbar-menu {
+        margin-left:15%;
+        transition-duration: 500ms;
+
     }
     .show-menu {
         display: inline-flex;
@@ -145,16 +151,23 @@ section {
         color: var(--secondary-color);
         background-color: transparent   ;
         border: transparent;
+        transition-duration: 500ms;
+
     }
    
     .navbar-menu {
         display: none;
+        transition-duration: 500ms;
+
     }
     .show {
+        transition-duration: 1000ms;
         display: flex;
         flex-direction: column;
         z-index: 4;
-        overflow:hidden
+        overflow:hidden;
+        transition-duration: 1000ms;
+
     }
     
     .navbar-menu  li {
@@ -162,6 +175,8 @@ section {
         margin-bottom: 5px;
         padding:5px;
         color: var(--secondary-color);
+
+        transition-duration: 1000ms;
 
     }
     .navbar-menu li a{
@@ -213,7 +228,9 @@ section {
       
 
 }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:400px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    .navbar-menu li a {
+        font-size: 16px; }}
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
 @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 
@@ -334,7 +351,28 @@ padding:0 10px;
         .filprod div p {
             font-size: 15px;
         }
+        .containeroo .abo {
+            display: flex;
+            flex-direction: column;
+        }
+        .containeroo .abo p {
+            font-size: 25px;
+
+        }
     }
+    @media screen 
+  and (width: 768px) {
+
+  .container .navbar-menu {
+    margin-left: 35%;
+    transition-duration: 500ms;
+   
+
+}
+.navbar-menu  li a {
+    font-size: 18px;
+}
+  }
 .textooo ,.mapo {
     margin-top: 20px;
     display: flex;
