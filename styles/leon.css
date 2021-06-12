@@ -91,7 +91,9 @@ section {
     text-align: center;
     position: relative;
     transition-duration: 1000ms;
+    
 }
+
  .text-content h4 {
     color:var(--secondary-color);
     font-size: 22px;
@@ -101,7 +103,7 @@ section {
 }
  .text-content h2 {
     color: var(--main-color);
-    font-size: 62px;
+    font-size: 3.1rem;
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 0.2;
@@ -124,12 +126,47 @@ section {
 .owl-dots .btt:not(:first-child){
     opacity: 0.3;
 }
+section div button {
+    background-color: #232323;
+    opacity: 0.6;
+    border-radius: 5px;
+    border:none;
+    transition-duration: 1200ms;
+    
+}
+section div button i{
+    color:var(--secondary-color);
+    padding:0.3rem;
+    font-size: 1.5rem;
+}
+
+.BUTFOR {
+    position: absolute;
+    right:1%;
+    top:58%;
+}
+.BUTback {
+    position: absolute;
+    left:1%;
+    top:58%;
+}
+
+section div button:hover {
+    /* background-color: transparent; */
+    font-size: 1.6rem;
+    opacity: 1;
+}
 
 /* end */
 
 
 /* start media queries */ 
 @media (max-width:768px)  { 
+    section div button i {
+        font-size:1.7rem;
+        padding:0.5rem;
+    }
+   
 
     .navbar-brand h2 {
         font-size: 6vw;
@@ -195,16 +232,17 @@ section {
         color:#232323;
     }
 
+
     
     .owl-dots .btt {
         padding:5px;
         margin: auto;
     }
     .text-content h4 {
-        font-size: 5vw;
+        font-size: 1rem;
     }
     .text-content h2 {
-        font-size: 7vw;
+        font-size: 1.8rem;
         line-height: 1.5;
         word-spacing: 20px;
     }
@@ -528,7 +566,7 @@ padding:0 10px;
 
 
 .containem {
-    background-color:transparent;
+    background-color:#fff;
     padding: 1em;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -539,9 +577,7 @@ padding:0 10px;
     
 }
 
-.form-field error small {
-    color: red;
-}
+
 
 .form {
     padding: 10px 20px;
@@ -550,6 +586,9 @@ padding:0 10px;
     justify-content: center;
     align-content: center;
 }
+.form input {
+    padding:10px;
+}
 
 .form h1 {
     font-size: 1.5em;
@@ -557,24 +596,24 @@ padding:0 10px;
     margin-bottom: 20px;
 
 }
-
-.form-field {
-    margin-bottom: 5px;
-    position: relative;
-
+.form p {
+    opacity: 0.8;
+    font-size: 0.8rem;
 }
+
+
 .select {
   display: flex;
   justify-content: center; 
   align-content: center; 
   text-align: center;
-}
-select {
-    display: block;
-    max-width: 100%;
+  max-width: fit-content;
+    margin-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
     
-    
 }
+
 #genders option {
     text-align: center;
     margin:10px;
@@ -589,6 +628,12 @@ select {
     font-weight: 300;
     opacity: 0.9;
 }
+input:active {
+border:none;    
+}
+#signup input:focus {
+    outline: none;
+}
 
 .form-field input {
     /* border: solid 2px #f0f0f0; */
@@ -601,30 +646,51 @@ select {
     border:none;
     
 }
+.selecto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 
-.form-field input:focus {
-    outline: none;
 }
 
-.form-field.error input {
-    border-color: red;
+.submito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+   
 }
 
-.form-field.success input {
-    border-color: lightgreen;
-}
-
-
-.form-field small {
-    color: var(--secondary-color);
-}
 #submit {
-    display:block ;
     background-color: var(--secondary-color);
-    color: white;
+    /* color: rgb(201, 199, 199)01, 199, 199); */
     padding:20px;
+    width: 100%;
+
     margin-top:10px;
     font-size: 16px;
+    border:none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.valid {
+    border:2px solid limegreen
+}
+.invalid {
+    border:2px solid red;
+} 
+.pnp {
+    display: none;
+}
+.o {
+    display: block;
+}
+#password:focus .pnp {
+    display: block;
+}
+#password:focus .o {
+    display: none;
 }
 @media (max-width:767px)  { 
     .textooo h2 {
