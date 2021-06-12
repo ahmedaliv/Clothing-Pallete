@@ -13,7 +13,7 @@
     <!--Font Awesome Library -->
     <link rel="stylesheet" href="styles/all.min.css">
 
-    <title>Registration</title>
+    <title>Clothes</title>
 </head>
 <body class="rego">
    <header>
@@ -38,41 +38,29 @@
     <div class="containem">
         <form id="signup" class="form" method="POST">
             <h1>Registration</h1>
-            <div class="form-field">
-                <label for="username">Username:</label>
-                <input type="text" name="username" id="username" autocomplete="off">
-                <small></small>
-            </div>
+            <input type="text" name="username" placeholder="username" required>
+            <p>Username must be  and contain 5 - 12 characters</p>
 
-            <div class="form-field">
-                <label for="Email">Email:</label>
-                <input type="text" name="email" id="email" autocomplete="off">
-                <small></small>
-            </div>
+            <input type="text" name="email" placeholder="email" required>
+            <p>Email must be a valid address, e.g. me@mydomain.com</p>
 
-            <div class="form-field">
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password" autocomplete="off">
-                <small></small>
-            </div>
+            <input type="password" name="password" placeholder="password" required>
+            <p class="pnp o">Password Rules</p>
+            <p class="pnp">Must Start With An uppercase char</p>
+            <p class="pnp">Must include 8 characters no more no less.</p>
+            <p class="pnp">Must include one digit at least.</p>
+            <p class="pnp">Must include one special character</p>
+            <p class="pnp">No White Spaces Are Allowed</p>
 
-
-            <div class="form-field">
-                <label for="username">Confirm Password:</label>
-                <input type="password" name="confirm-password" id="confirm-password" autocomplete="off">
-                <small></small>
-            </div>
-            <div class="form-field select">
-                <select id="genders" name="genders" >
-                    <option value="male" selected>Male</option>
-                    <option value="female">Female</option>
-                    </select>
-            </div>
-
-            <div class="form-field">
-                
-                    <input type="submit" value="Sign Up" id="submit"> 
-                
+            <input type="text" name="phonenumber" placeholder="phonenumber" required >
+            <p>phonenumber must be a valid EG phonenumber(11 digits)</p>
+            <div class="selecto"><select id="genders" class="select">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+            <div class="submito">
+                <input type="submit" id="submit" value="Submit" required>
             </div>
         </form>
     </div>
