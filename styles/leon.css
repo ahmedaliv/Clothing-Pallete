@@ -596,7 +596,7 @@ padding:0 10px;
     margin-bottom: 20px;
 
 }
-.form p {
+.form p:not(.o) {
     opacity: 0.8;
     font-size: 0.8rem;
 }
@@ -680,17 +680,27 @@ border:none;
 .invalid {
     border:2px solid red;
 } 
-.pnp {
-    display: none;
+.pnp:not(.l) {
+margin:0;
+
 }
+
 .o {
     display: block;
+    margin-bottom: 2px;
+    margin-left: -4px;
+    font-size: 1rem;
+    opacity: 0.8;
+    
+
 }
-#password:focus .pnp {
-    display: block;
-}
-#password:focus .o {
+
+#password:focus  + .o {
     display: none;
+}
+.l{
+    margin:0;
+margin-bottom: 20px;
 }
 @media (max-width:767px)  { 
     .textooo h2 {
