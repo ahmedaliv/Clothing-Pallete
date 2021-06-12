@@ -1,32 +1,6 @@
 const section=document.querySelector('section');
 
 
-// const button= document.querySelectorAll(".btt"); 
-// button[1].addEventListener('click',function(){
-//   section.style.backgroundImage='url("./images/2.jpg")';
-
-//   button[1].style.opacity="1";
-//   button[0].style.opacity="0.5";
-//   button[2].style.opacity="0.5";
-//   });
-// button[0].addEventListener('click',function(){
-//     section.style.backgroundImage='url("./images/1.jpg")';
-//     button[1].style.opacity="0.5";  
-//     button[0].style.opacity="1";
-
-//     button[2].style.opacity="0.5";
-// })
-
-// button[2].addEventListener('click',function(){
-//         section.style.backgroundImage='url("./images/3.jpg")';
-    
-//         button[2].style.opacity="1";
-//         button[1].style.opacity="0.5";
-//         button[0].style.opacity="0.5";
-//         });
-
-//         ///////end buttons js/////////
-
 
     
      
