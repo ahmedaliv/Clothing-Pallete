@@ -9,14 +9,21 @@ function changer() {
 
           if(bimgconter!==backimages.length){
             url= "background-image: url(\"" + backimages[bimgconter] +"\");";
+            section.style.backgroundColor="black";
+            section .style.opacity='0.8'
+            
+            
             section.setAttribute('style' , url)
+            section .style.opacity='1'
             bimgconter++;
           }
           else {
             bimgconter=0;
             url= "background-image: url(\"" + backimages[bimgconter] +"\");";
+            section.style.backgroundColor="black";
+            section .style.opacity='0.8'
             section.setAttribute('style' , url)
-
+            section .style.opacity='1'
 
 
           }
