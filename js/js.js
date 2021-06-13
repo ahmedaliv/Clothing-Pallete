@@ -1,8 +1,32 @@
 const section=document.querySelector('section');
-
-
-
+const backimages=['./images/1.jpg' , './images/2.jpg', './images/3.jpg']
+let timeout=3000;
+let bimgconter=0;
+function changer() {
+  setInterval(() => {
     
+    let url;
+
+          if(bimgconter!==backimages.length){
+            url= "background-image: url(\"" + backimages[bimgconter] +"\");";
+            section.setAttribute('style' , url)
+            bimgconter++;
+          }
+          else {
+            bimgconter=0;
+            url= "background-image: url(\"" + backimages[bimgconter] +"\");";
+            section.setAttribute('style' , url)
+
+
+
+          }
+
+        
+    
+    }, timeout)
+}
+document.addEventListener('DOMContentLoaded' , changer())
+
      
 
 
@@ -25,7 +49,6 @@ const section=document.querySelector('section');
           }
           const forward=document.querySelector('.BUTFOR button');
           const back=document.querySelector('.BUTback button');
-          const backimages=['./images/1.jpg' , './images/2.jpg', './images/3.jpg']
           let i=0
 
           let url= "background-image: url(\"" + backimages[i] +"\");";
