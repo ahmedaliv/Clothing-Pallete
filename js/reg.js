@@ -2,8 +2,10 @@
 const inputs = document.querySelectorAll('input');
 const patterns ={
 phonenumber: /^\d{11}$/,
-username:/^[a-z\d]{5,12}$/i,
+firstname:/^[a-z\d]{5,12}$/i,
+lastname:/^[a-z\d]{5,12}$/i,
 email:/[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+/,
+address:/^[a-zA-Z0-9\s,'-]*$/,
 password:/^[A-Z]+(?=.*[a-z])(?=.*\d)(?=.*[^a-zA-Z0-9]).{7}$/
 };
 function validate(field , regex) {
@@ -27,13 +29,12 @@ inputs.forEach((input)=>{
 
 })
 
-
+//dropdownmenu///
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
-  // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.show-menu')) {
       var dropdowns = document.getElementsByClassName("nav-barmenu");
